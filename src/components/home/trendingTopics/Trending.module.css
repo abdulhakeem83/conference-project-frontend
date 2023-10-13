@@ -1,0 +1,170 @@
+.trendTopic a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  color: #e05100;
+}
+.trendTopic h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  color: #24282f;
+}
+.topicBottom p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #24282f;
+  margin-bottom: 0px;
+}
+.topicBottom .cardTextDate .topicCount {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #24282f;
+  margin-bottom: 0px;
+}
+.topicBox {
+  border-radius: 24px;
+  border: 1px solid var(--neutral-neutral-100, #eef0f2);
+  background: var(--neutral-neutral-50, #fdfdfe);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.topicBox:hover {
+  background-color: #5a6475;
+  cursor: pointer;
+}
+.topicBox:hover .topicBottom p {
+  color: #ffffff;
+}
+.topicBoxs {
+  border-radius: 24px;
+  border: 1px solid var(--neutral-neutral-100, #eef0f2);
+  background: var(--neutral-neutral-50, #fdfdfe);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22rem;
+}
+.cardHieght {
+  min-height: 23rem;
+}
+.cardTextDate {
+  background-color: #eef0f2;
+  width: fit-content;
+  padding: 3px 8px 0px 8px;
+  border-radius: 12px;
+  .h4,
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #24282f;
+  }
+  .h5,
+  h5 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #24282f;
+  }
+}
+.paginationMobile {
+  & button {
+    &:hover {
+      background-color: #5a6475;
+      box-shadow: none;
+      .faChevron {
+        color: #ffffff;
+      }
+    }
+    &:focus {
+      background-color: #5a6475;
+      box-shadow: none;
+      .faChevron {
+        color: #ffffff;
+      }
+    }
+  }
+  & button[disabled] {
+    &:hover {
+      background-color: #dfdede !important;
+      .faChevron {
+        color: #b3b6bb;
+      }
+    }
+  }
+}
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+button[disabled] .faChevron {
+  color: #b3b6bb;
+}
+
+/*  placeholder styles */
+
+.cardHieght {
+  min-height: 23rem;
+}
+.cardHiegh {
+  min-height: 11rem;
+}
+.topicBox {
+  border-radius: 24px;
+  border: 1px solid var(--neutral-neutral-100, #eef0f2);
+  /* background: var(--neutral-neutral-50, #fdfdfe); */
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.topicCircle span {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #5a6475;
+}
+.topicBotto span {
+  background-color: #5a6475;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+.topicCounting span {
+  border-radius: 3px;
+  color: #5a6475;
+}
+
+@media only screen and (max-width: 768px) {
+  .paginationMobile {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .trendTopic h2 {
+    color: var(--neutral-neutral-800, #24282f);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+  }
+  .paginationMobile {
+    display: none;
+  }
+}

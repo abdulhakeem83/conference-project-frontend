@@ -1,0 +1,14 @@
+.trendTopic h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  color: #24282f;
+}
+@media (max-width: 576px) {
+  .trendTopic h2 {
+    color: var(--neutral-neutral-800, #24282f);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+  }
+}

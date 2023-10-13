@@ -1,0 +1,35 @@
+.cardHieght {
+  min-height: 23rem;
+}
+.cardHiegh {
+  min-height: 11rem;
+}
+.topicBox {
+  border-radius: 24px;
+  border: 1px solid var(--neutral-neutral-100, #eef0f2);
+  /* background: var(--neutral-neutral-50, #fdfdfe); */
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.topicCircle span {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #5a6475;
+}
+.topicBotto span {
+  background-color: #5a6475;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 0px;
+  /* background-color: #5a6475; */
+}
+.topicCounting span {
+  border-radius: 3px;
+  color: #5a6475;
+}

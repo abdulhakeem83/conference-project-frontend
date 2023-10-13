@@ -1,0 +1,97 @@
+.about {
+  width: 100%;
+  & h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 72px;
+  }
+  & .innerHeadpage {
+    & a {
+      font-size: 20px;
+      font-style: normal;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 24px;
+      color: #e05100;
+    }
+
+    & p {
+      font-size: 20px;
+
+      font-weight: 500;
+      line-height: 24px;
+      color: #5a6475;
+    }
+  }
+}
+
+.cardsCol {
+  & h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #24282f;
+  }
+}
+
+.cardsCol {
+  & p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #24282f;
+  }
+}
+
+.secMission {
+  & h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  & p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #5a6475;
+  }
+}
+
+.missionItems ul {
+  padding: 0px;
+}
+
+.missionItems ul li {
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #5a6475;
+  align-items: center;
+  display: flex;
+  padding: 10px 0px;
+}
+
+@media (max-width: 768px) {
+  .innerHeadpage {
+    & h1 {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 44px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .innerHeadpage {
+    & h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+export const CONTACT_DROPDOWN_LIST = [
+  { value: "+91", label: "IN +91" },
+  { value: "+44", label: "UK +44" },
+  { value: "+33", label: "FR +33" },
+  { value: "+49", label: "DE +49" },
+  { value: "+81", label: "JP +81" },
+  { value: "+86", label: "CN +86" },
+  { value: "+61", label: "AU +61" },
+  { value: "+1", label: "A +1" },
+  { value: "+7", label: "U +7" },
+  { value: "+55", label: "BR +55" },
+  { value: "+34", label: "ES +34" },
+  { value: "+39", label: "IT +39" },
+  { value: "+82", label: "KR +82" },
+  { value: "+971", label: "AE +9" },
+  { value: "+31", label: "NL +31" },
+  { value: "+41", label: "CH +41" },
+  { value: "+46", label: "SE +46" },
+  { value: "+65", label: "SG +65" },
+];
+export const CONTACT_FORM_FIELDS = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phoneNumber: "",
+  countryCode: "1",
+  message: "",
+};

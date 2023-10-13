@@ -1,0 +1,240 @@
+.card {
+  border-radius: 32px;
+  cursor: pointer;
+}
+.cardMain {
+  border-radius: 36px;
+  padding: 3px;
+  border: 3px solid #ffffff;
+}
+.cardMain:hover {
+  border-radius: 36px;
+  padding: 3px;
+  border: 3px solid #dee0e3;
+}
+.cardMainDetails {
+  border-radius: 36px;
+  padding: 3px;
+  border: 3px solid #eef0f2;
+}
+.cardMainDetails:hover {
+  border-radius: 36px;
+  padding: 3px;
+  border: 3px solid #dee0e3;
+}
+.cardImgTop {
+  border-radius: 32px 32px 0 0;
+  width: 100%;
+}
+.cardTitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  overflow: hidden;
+  display: -webkit-box;
+  cursor: pointer;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.cardText {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 133.333% */
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cardText span {
+  color: #5a6475;
+  font-weight: 500;
+  font-size: 12px;
+  border: 1px solid #dee2e6;
+  display: inline-block;
+  padding: 0px 6px;
+  border-radius: 4px;
+  margin: 0px 8px 0px 0px;
+}
+
+.cardTextCity {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cardTextCity span {
+  color: #5a6475;
+  font-weight: 500;
+  font-size: 14px;
+  /* border: 1px solid #dee2e6; */
+  display: inline-block;
+  padding: 0px 6px;
+  margin: 0px 8px 0px 0px;
+}
+
+.cardTextDate span {
+  background: #eef0f2;
+  display: flex;
+  padding: 5px 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+}
+.cardTextDate {
+  background-color: #eef0f2;
+  width: fit-content;
+  padding: 3px 8px 0px 8px;
+  border-radius: 12px;
+  .h4,
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #24282f;
+  }
+  .h5,
+  h5 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #24282f;
+  }
+}
+.itemTimings {
+  padding-right: 10px;
+}
+.linkName {
+  text-decoration: none;
+  color: #24282f;
+  cursor: pointer;
+}
+.linkName:hover {
+  color: #24282f;
+}
+.viewAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dee0e3;
+  border-radius: 32px;
+}
+.viewAll:hover {
+  background-color: #5a6475;
+  cursor: pointer;
+  color: #ffffff;
+}
+.viewAll:hover h2 {
+  color: #ffffff;
+}
+.view {
+  text-decoration: none;
+  color: #5a6475;
+}
+.view:hover {
+  color: #5a6475;
+}
+.sectionCards {
+  width: 28%;
+}
+.cardText span:hover {
+  background-color: #e6e8ea;
+  color: #32373f;
+}
+.cardTextCity span:nth-child(n) {
+  border-radius: 0px;
+  border-left: 2px solid #dee2e6;
+}
+.cardTextCity span:first-child {
+  border-radius: 0px;
+  border-left: 0px;
+}
+
+.paginationMobile {
+  & button {
+    &:hover {
+      background-color: #5a6475;
+      box-shadow: none;
+      .faChevron {
+        color: #ffffff;
+      }
+    }
+    &:focus {
+      background-color: #5a6475;
+      box-shadow: none;
+      .faChevron {
+        color: #ffffff;
+      }
+    }
+  }
+  & button[disabled] {
+    &:hover {
+      background-color: #dfdede !important;
+      .faChevron {
+        color: #b3b6bb;
+      }
+    }
+  }
+}
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+button[disabled] .faChevron {
+  color: #b3b6bb;
+}
+.spinnerSection {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: static;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .scrollBar {
+    scrollbar-width: none;
+    overflow: auto;
+    border: none;
+    padding: 0.5rem;
+  }
+  .scrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  .paginationMobile {
+    display: none;
+  }
+  .sectionCards {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .scrollBar {
+    scrollbar-width: none;
+    overflow: auto;
+    border: none;
+    padding: 0.5rem;
+  }
+  .scrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  .paginationMobile {
+    display: none;
+  }
+  .sectionCards {
+    width: 70%;
+  }
+}

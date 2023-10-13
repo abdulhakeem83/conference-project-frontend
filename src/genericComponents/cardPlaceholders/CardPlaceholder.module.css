@@ -1,0 +1,114 @@
+.sectionCards {
+  width: 28%;
+  min-height: 26rem;
+  /* background-color: red; */
+}
+.card {
+  border-radius: 32px;
+}
+.cardImgTop {
+  border-radius: 32px 32px 0 0;
+  width: 100%;
+}
+.cards {
+  min-height: 26rem;
+}
+.cardText {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 133.333% */
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.cardText span {
+  color: #5a6475;
+  font-weight: 500;
+  font-size: 12px;
+  border: 1px solid #dee2e6;
+  display: inline-block;
+  padding: 0px 6px;
+  border-radius: 4px;
+  margin: 0px 8px 0px 0px;
+}
+.cardTextCity {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cardTextCity span {
+  color: #5a6475;
+  font-weight: 500;
+  font-size: 14px;
+  /* border: 1px solid #dee2e6; */
+  display: inline-block;
+  padding: 0px 6px;
+  margin: 0px 8px 0px 0px;
+}
+.cardTextDate {
+  /* background-color: #eef0f2; */
+
+  /* padding: 3px 8px 0px 8px; */
+  border-radius: 12px;
+}
+.viewAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dee0e3;
+  border-radius: 32px;
+}
+.viewAll:hover {
+  background-color: #5a6475;
+  cursor: pointer;
+  color: #ffffff;
+}
+.viewAll:hover h2 {
+  color: #ffffff;
+}
+.view {
+  text-decoration: none;
+  color: #5a6475;
+}
+.view:hover {
+  color: #5a6475;
+}
+@media only screen and (max-width: 768px) {
+  .scrollBar {
+    scrollbar-width: none;
+    overflow: auto;
+    border: none;
+    padding: 0.5rem;
+  }
+  .scrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  .paginationMobile {
+    display: none;
+  }
+  .sectionCards {
+    width: 75%;
+  }
+}
+@media (max-width: 576px) {
+  .scrollBar {
+    scrollbar-width: none;
+    overflow: auto;
+    border: none;
+    padding: 0.5rem;
+  }
+  .scrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  .paginationMobile {
+    display: none;
+  }
+  .sectionCards {
+    width: 70%;
+  }
+}

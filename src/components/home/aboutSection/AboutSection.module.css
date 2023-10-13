@@ -1,0 +1,72 @@
+.sectionAbout h2 {
+  color: #24282f;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px; /* 125% */
+}
+.sectionAbout p {
+  color: #5a6475;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionTbP {
+    gap: 120px;
+  }
+  .sectionAbout {
+    text-align: center;
+  }
+  .sectionAbout h2 {
+    font-size: 34px;
+  }
+  .btnsAbout {
+    width: 330px;
+    height: 56px;
+    /* text-align: center; */
+  }
+  .imgTab {
+    width: 680px;
+    height: 320px;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTbP {
+    gap: 60px;
+    /* padding: 0px 16px; */
+  }
+  .sectionAbout {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sectionAbout h2,
+  p {
+    text-align: start;
+  }
+  .sectionAbout .imgTab {
+    /* width: 343px; */
+    height: 240px;
+    border-radius: 24px;
+    /* margin-right: 0.9rem; */
+  }
+  .sectionAbout h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .sectionAbout .btnsAbout {
+    display: flex;
+    width: 343px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 8px;
+    align-self: stretch;
+  }
+}

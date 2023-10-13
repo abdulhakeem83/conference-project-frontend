@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": 0,
+    "space-before-function-paren": ["error", "always"],
+    "brace-style": ["warn"],
+    "eol-last": 0,
+    "no-useless-escape": 0,
+    "no-unused-expressions": 0,
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "none"
+      }
+    ],
+    "arrow-body-style": ["warn"],
+    "new-cap": ["warn"],
+    "max-len": [
+      "warn",
+      {
+        "code": 600
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": ["debug", "info", "error"]
+      }
+    ],
+    "no-shadow": [
+      "error",
+      {
+        "builtinGlobals": false,
+        "hoist": "functions",
+        "allow": [],
+        "ignoreOnInitialization": false
+      }
+    ],
+    "eqeqeq": ["warn"],
+    "no-nested-ternary": ["warn"],
+    "@typescript-eslint/no-var-requires": ["warn"],
+    "no-useless-catch": ["warn"],
+    "semi": ["warn", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx",".tsx",".ts"]
+      }
+    ]
+  }
+}
